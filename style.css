@@ -267,7 +267,7 @@ body * {
 @media screen and (max-width: 1400px) {
     .container {
         flex-direction: column;
-        gap: 1px;
+        gap: 0px;
     }
 
     .image-logo {
@@ -285,11 +285,8 @@ body * {
         top: 35%;
     }
 
-
     #results {
-        position: absolute;
-        top: 55%;
-        left: 25%;
+        
         flex-direction: column;
         align-items: center;
         margin-left: 0%;
@@ -328,6 +325,55 @@ body * {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .container {
+        height: 130vh;
+    }
+
+    .image-logo {
+        height: auto;
+        width: 70%;
+    }
+
+    #results {
+        position: absolute;
+        left: 22%;
+        top: 55%;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 365px) {
+    
+    .container {
+        height: 160vh;
+    }
+    
+    .primary-title {
+        max-width: 200px;
+        font-size: 20px;
+    }
+
+    .inputs {
+        width: 280px;
+    }
+
+    #boxSearch {
+        top: 41%;
+        width: 280px;
+    }
+
+    .linkToOutherPage {
+        font-size: 14px;
+    }
+
+    #results {
+        top: 65%;
+        left: 20%;
+    }
+
+}
 
 /* ------------------------- SECOND PAGE --------------------------------*/
 
