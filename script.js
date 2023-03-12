@@ -76,7 +76,7 @@ function loadMovieDetails(){
 
 function displayMovieDetails(details){
     results.innerHTML = `
-    <div>
+    <div class="box-image-buttom">
         <img class="image-result" src="${(details.Poster != 'N/A') ? details.Poster : noImage}" alt="movie poster">
         <button class="button-recomedation" type="submit" onclick="postToAPI(peopleName, resultToDB)">Recomendar</button>
     </div>

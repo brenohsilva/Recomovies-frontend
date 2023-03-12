@@ -19,14 +19,11 @@ body * {
 
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex;
     gap: 130px;
     max-width: 1440px;
     height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-    align-itens: center;
+    margin: auto;
 
 }
 
@@ -47,7 +44,6 @@ body * {
 
     color: white;
     font-size: 48px;
-    line-height: 1;
     font-weight: 700;
     line-height: 1.25;
     text-align: center;
@@ -207,7 +203,7 @@ body * {
     position: absolute;
     width: 320px;
     padding: 8px;
-    top: 550px;
+    top: 57%;
     gap: 16px;
     overflow-y: scroll;
     max-height: 16rem;
@@ -265,6 +261,71 @@ body * {
 
 .invisible-class {
     display: none;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .container {
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .image-logo {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .primary-title {
+        max-width: 300px;
+        font-size: 26px;
+
+    }
+
+    #boxSearch {
+        top: 35%;
+    }
+
+
+    #results {
+        position: absolute;
+        top: 55%;
+        left: 25%;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0%;
+    }
+
+    #results #initial-poster {
+        display: none;
+    }
+    
+    .box-image-buttom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-result {
+        width: 195px;
+    }
+
+    .button-recomedation {
+        margin-left: 15%;
+        width: 70%;
+        font-size: 12px;
+        border-radius: 8px;
+        
+    }
+
+    .box-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .box-details .sinopse-result {
+        display: none;
+    }
 }
 
 
