@@ -123,8 +123,6 @@ function displayLists(listResult){
         <p ">Gender: <strong>${listResult[index].gender} </strong></p>
         <p>IMDb: <strong> ${listResult[index].rating}/10 <strong></p>
         <div class="overview"><p>Plot: </br> <strong> ${listResult[index].plot} </strong></p></div>
-        
-
         `
         conteinerLists.appendChild(indivList)
  
