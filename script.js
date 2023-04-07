@@ -130,7 +130,7 @@ function displayLists(listResult){
 }
 
 
-/* GRAVANDO NO BANCO DE DADOS */
+/* ------------- GRAVANDO NO BANCO DE DADOS --------------- */
 
  async function postToAPI(name, resultToDB) {
     if (name == ''){
